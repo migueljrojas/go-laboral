@@ -22,5 +22,8 @@
     "sirv": "^2.0.2",
     "vite": "^4.0.3",
     "vite-plugin-ssr": "^0.4.131"
+  },
+  "devDependencies": {
+    "sass": "^1.62.1"
   }
 }

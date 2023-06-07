@@ -31,8 +31,8 @@ async function render(pageContext) {
         <meta name="description" content="${desc}" />
         <title>${title}</title>
       </head>
-      <body>
-        <div id="react-root">${dangerouslySkipEscape(pageHtml)}</div>
+      <body id="app">
+        ${dangerouslySkipEscape(pageHtml)}
       </body>
     </html>`
 

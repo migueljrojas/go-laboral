@@ -1,18 +1,21 @@
-import { Counter } from './Counter'
-
-export { Page }
+import Main from "../../layouts/main";
+import "./styles.scss";
 
 function Page() {
   return (
-    <>
-      <h1>Welcome</h1>
+    <Main className="home">
+      <h1 className="home__title">Welcome</h1>
       This page is:
       <ul>
         <li>Rendered to HTML.</li>
         <li>
-          Interactive. <Counter />
+          Interactive.
         </li>
       </ul>
-    </>
+    </Main>
   )
+}
+
+export {
+  Page,
 }
