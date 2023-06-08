@@ -1,0 +1,52 @@
+.hero {
+  position: relative;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  &__slide {
+    object-fit: cover;
+    opacity: 0;
+    transition: all .3s ease;
+    width:100%;
+    height:100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    &.js-active {
+      opacity: 1;
+    }
+  }
+
+  &__indicators {
+    position: absolute;
+    right: 30px;
+    z-index: 500;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    top: 50%;
+  }
+
+  &__indicator {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #fff;
+    cursor: pointer;
+
+    &.js-active {
+      background: #fff;
+    }
+  }
+
+  &__backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+  }
+}

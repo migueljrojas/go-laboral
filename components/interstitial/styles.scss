@@ -1,0 +1,24 @@
+.interstitial {
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: 1000px) {
+    padding-top: 110px;
+    padding-bottom: 110px;
+  }
+  
+  &--green {
+    background: #4da234;
+    color: #fff;
+  }
+
+  &__content {
+    width: 100%;
+    max-width: 970px;
+    text-align: center;
+    padding-inline: 15px;
+  }
+}

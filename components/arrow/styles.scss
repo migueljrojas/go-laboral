@@ -1,0 +1,32 @@
+.arrow-icon {
+  $a: &;
+
+  display: flex;
+  align-items: center;
+
+  &__body {
+    height: 2px;
+    background: #fff;
+    width: 10px;
+    margin-right: -2px;
+  }
+
+  &__tip {
+    width: 3px;
+    height: 3px;
+    border-right: 3px solid transparent;
+    border-left: 3px solid transparent;
+    border-bottom: 3px solid #fff;
+    transform: rotate(90deg);
+  }
+
+  &--green {
+    #{$a}__body {
+      background: #4da234;
+    }
+
+    #{$a}__tip {
+      border-bottom-color: #4da234;
+    }
+  }
+}

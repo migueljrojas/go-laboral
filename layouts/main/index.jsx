@@ -1,4 +1,4 @@
-import { string } from "prop-types";
+import PropTypes from "prop-types";
 import { childrenPropType } from "/renderer/PropTypeValues";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
@@ -17,7 +17,7 @@ function Main({children, className}) {
 
 Main.propTypes = {
   children: childrenPropType,
-  className: string
+  className: PropTypes.string
 }
 
 export default Main;
