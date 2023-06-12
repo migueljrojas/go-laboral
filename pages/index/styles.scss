@@ -11,6 +11,8 @@
 }
 
 .home {
+  $h: &;
+
   &__hero {
     width: 100%;
     height: 100vh;
@@ -44,16 +46,6 @@
 
     @media (min-width: 1000px) {
       font-size: 55px;
-    }
-
-    &:after {
-      content: '';
-      position: absolute;
-      width: 50px;
-      height: 3px;
-      background: #4da234;
-      bottom: -10px;
-      left: 0;
     }
   }
 
@@ -144,7 +136,7 @@
   &__resultados {
     height: 700px;
     position: relative;
-    background: url("/public/assets/85713129_l_normal_none.jpg") no-repeat center center / cover;
+    background: url("/assets/85713129_l_normal_none.jpg") no-repeat center center / cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -199,5 +191,411 @@
         text-align: left;
       }
     }
+  }
+
+  &__features {
+    background: #eaeaea;
+  }
+
+  &__features-container {
+    
+    @media (min-width: 700px) {
+      display: flex;
+      height: 90vh;
+    }
+
+    &--reversed {
+      @media (min-width: 700px) {
+        #{$h}__features-image {
+          order: 2;
+        }
+
+        #{$h}__features-text {
+          left: auto;
+          right: 40px;
+        }
+      } 
+    }
+  }
+
+  &__features-text {
+    padding-inline: 15px;
+    padding-block: 15vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+
+    @media (min-width: 700px) {
+      padding-block: unset;
+      align-self: end;
+      width: 50%;
+      position: absolute;
+      top: 50%;
+      width: 520px;
+      left: 40px;
+    }
+  }
+
+  &__features-content {
+    position: relative;
+
+    @media (min-width: 700px) {
+      width: 50%;
+    }
+  }
+
+  &__features-image {
+    @media (min-width: 700px) {
+      width: 50%;
+      overflow: hidden;
+
+      img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  &__features-title {
+    color:#055881;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 21px;
+    line-height: 1.5;
+    text-transform: uppercase;
+
+    @media (min-width: 700px) {
+      font-size: 26px;
+    }
+
+    strong {
+      display: block;
+    }
+
+    &--grey {
+      color: #878787;
+    }
+  }
+
+  &__features-desc {
+    font-size: 14px;
+    color: #878787;
+    line-height: 1.5;
+    transition: all .3s ease;
+
+    &.js-hidden {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  &__features-link {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: #878787;
+  }
+
+  &__features-services {
+    display: flex;
+    position: relative;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #707070;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #878787;
+    grid-row: 2;
+
+    & ~ #{$h}__features-desc {
+      grid-row: 3;
+      grid-column: 1;
+    }
+
+    li {
+      width: 50%;
+      position: relative;
+      cursor: pointer;
+
+      &:after {
+        content: '';
+        width: 50px;
+        height: 3px;
+        background: #055881;
+        transition: all .3s ease;
+        position: absolute;
+        bottom: -7px;
+        z-index: 2;
+        left: 0;
+      }
+
+      &.js-active {
+        &:after {
+          background: #4da234;
+        }
+      }
+    }
+  }
+
+  &__map {
+    background: #055881 url('/assets/mapa.jpg') no-repeat center center / cover;
+    height: 40vh;
+    position: relative;
+
+    @media (min-width: 700px) {
+      height: 550px;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0,0,0,.4);
+    }
+  }
+
+  &__map-text {
+    position: absolute;
+    top: 30%;
+    color: #fff;
+    padding-inline: 15px;
+
+    @media (min-width: 700px) {
+      padding-inline: unset;
+      top: 40%;
+      width: 520px;
+      left: 50%;
+      transform: translateX(-485px);
+    }
+  }
+
+  &__map-title {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 21px;
+
+    @media (min-width: 700px) {
+      font-size: 26px;
+    }
+  }
+
+  &__map-desc {
+    font-size: 13px;
+
+    @media (min-width: 700px) {
+      font-size: 14px;
+      width: 95%;
+    }
+  }
+
+  &__directory {
+    background: #eaeaea;
+    padding-block: 90px;
+    position: relative;
+    color: #878787;
+    text-align: center;
+    font-size: 14px;
+
+    &:after {
+      content: '';
+      background: url('/assets/pattern.svg') repeat-x center bottom / 180px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 90px;
+      opacity: .3;
+    }
+
+    strong {
+      display: block;
+      margin-bottom: 3px;
+    }
+  }
+
+  &__directory-container {
+    max-width: 970px;
+    margin-inline: auto;
+
+    @media (min-width: 700px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+  }
+
+  &__directory-main {
+    margin-bottom: 40px;
+    width: 285px;
+    margin-inline: auto;
+
+    img {
+      width: 60%;
+    }
+  }
+
+  &__directory-title {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 21px;
+    margin-bottom: 60px;
+
+    &:after {
+      bottom: -30px;
+    }
+
+    @media (min-width: 700px) {
+      font-size: 26px;
+    }
+  }
+
+  &__directory-list {
+    li {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__directory-consultorios {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    #{$h}__directory-title {
+      grid-column: 1/3;
+      letter-spacing: -1px;
+    }
+  }
+
+  &__video {
+    iframe {
+      aspect-ratio: 16/9;
+      width: 100%;
+    }
+  }
+
+  &__register {
+    padding-top: 60px;
+    height: 95vh;
+    background: #f1f1f1 url('/assets/fondo-contratacion-1.png') no-repeat bottom right / 180%;
+
+    @media (min-width: 700px) {
+      background: #f1f1f1 url('/assets/fondo-contratacion-1.png') no-repeat top center / cover;
+    }
+  }
+
+  &__register-content {
+    padding-inline: 15px;
+
+    @media (min-width: 1000px) {
+      width: 706px;
+      position: relative;
+      left: 50%;
+      transform: translateX(-485px);
+      top: 20%;
+      padding-inline: unset;
+    }
+  }
+
+  &__register-title {
+    color: #055881;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 60px;
+    line-height: 1.5;
+    letter-spacing: -1px;
+
+    &:after {
+      bottom: -35px;
+    }
+
+    @media (min-width: 700px) {
+      font-size: 62px;
+    }
+  }
+
+  &__register-subtitle {
+    color: #4da234;
+    font-size: .45em;
+    display: block;
+  }
+
+  &__register-text {
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+
+    strong {
+      color: #055881;
+    }
+
+    @media (min-width: 700px) {
+      width: 70%;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__register-features {
+    margin-bottom: 30px;
+
+    li {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: #055881;
+      margin-bottom: 15px;
+
+      img {
+        width: 28px;
+      }
+
+      @media (min-width: 700px) {
+        margin-bottom: 20px;
+      }
+    }
+
+    @media (min-width: 700px) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__register-cta {
+    display: inline-block;
+    background: #055881;
+    padding: 5px 20px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+  }
+
+  &__interstitial-title {
+    font-size: 21px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    margin-bottom: 60px;
+    max-width: 677px;
+    display: inline-block;
+
+    @media (min-width: 1000px) {
+      font-size: 24px;
+    }
+  }
+
+  &__interstitial-desc {
+    display: inline-block;
+    max-width: 677px;
+    line-height: 1.6;
+    font-size: 13px;
   }
 }

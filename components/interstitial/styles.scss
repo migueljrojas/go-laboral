@@ -1,4 +1,6 @@
 .interstitial {
+  $i: &;
+
   width: 100%;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -13,6 +15,29 @@
   &--green {
     background: #4da234;
     color: #fff;
+  }
+
+  &--picture {
+    background: url('/assets/header-actividades_programadas.jpg') no-repeat center center / cover;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top:0;
+      left:0;
+      bottom:0;
+      right:0;
+      background: #055881;
+      backdrop-filter: blur(6px);
+      mix-blend-mode:hard-light;
+    }
+
+    #{$i}__content {
+      position: relative;
+      z-index: 1;
+      color: #fff;
+    }
   }
 
   &__content {

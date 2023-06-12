@@ -1,8 +1,9 @@
 .arrow-icon {
   $a: &;
 
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  margin-right: 5px;
 
   &__body {
     height: 2px;

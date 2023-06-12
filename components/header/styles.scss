@@ -2,10 +2,6 @@ $items: 5;
 $transition-duration: 0.5s;
 $transition-delay: 0.05s;
 
-/* Toggle functionality */
-
-// To hide the checkbox
-
 .header {
   position: fixed;
   top:0;
@@ -34,10 +30,15 @@ $transition-delay: 0.05s;
     width: 100px;
     z-index: 1000;
     position: relative;
+    padding-inline: 15px;
 
     @media (min-width: 1000px) {
       height: 80px;
       width: 170px;
+    }
+
+    img {
+      width: 100%;
     }
   }
 
@@ -70,9 +71,8 @@ $transition-delay: 0.05s;
       }
 
       & ~ .header__toggle-container {
-        
-
         &::before {
+          top: 60px;
           left:0;
           bottom: 50%;
           backdrop-filter: blur(5px);
@@ -84,7 +84,6 @@ $transition-delay: 0.05s;
         pointer-events: auto;
         transform: translate(-50px, 80px);
     
-        // Restoring nav items from "lines" in the menu icon
         .header__nav-item {
           color: #878787;
           letter-spacing: 0;
@@ -125,7 +124,6 @@ $transition-delay: 0.05s;
       }
     }
   }
-  /* Toggle button */
   
   &__hamburguer {
     position: absolute;
@@ -175,7 +173,6 @@ $transition-delay: 0.05s;
 
   &__nav {
     display: inline-block;
-    // Don't want pointer-events as menu is closed
     pointer-events: none;
     transition: $transition-duration;
     position: absolute;
@@ -211,7 +208,6 @@ $transition-delay: 0.05s;
     }
   }
   
-  // Showing nav items as lines, making up the hamburger menu icon
   &__nav-item {
     position: relative;
     float: right;
