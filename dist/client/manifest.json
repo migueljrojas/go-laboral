@@ -1,0 +1,204 @@
+{
+  "_chunk-078aa1fb.js": {
+    "file": "assets/chunks/chunk-078aa1fb.js"
+  },
+  "_chunk-35ced68b.js": {
+    "file": "assets/chunks/chunk-35ced68b.js",
+    "imports": [
+      "_chunk-95bbd968.js"
+    ]
+  },
+  "_chunk-3818d69e.js": {
+    "file": "assets/chunks/chunk-3818d69e.js"
+  },
+  "_chunk-95bbd968.js": {
+    "file": "assets/chunks/chunk-95bbd968.js"
+  },
+  "_chunk-b65e180f.js": {
+    "css": [
+      "assets/static/index.26594e11.css"
+    ],
+    "file": "assets/chunks/chunk-b65e180f.js",
+    "imports": [
+      "_chunk-95bbd968.js",
+      "_chunk-35ced68b.js"
+    ]
+  },
+  "index.css": {
+    "file": "assets/static/index.26594e11.css",
+    "src": "index.css"
+  },
+  "node_modules/vite-plugin-ssr/dist/esm/client/entry.js": {
+    "dynamicImports": [
+      "pages/contacto/index.page.jsx",
+      "pages/index/index.page.jsx",
+      "pages/ingresar/index.page.jsx",
+      "pages/institucional/index.page.jsx",
+      "pages/registrar-empresa/index.page.jsx",
+      "pages/servicios/index.page.jsx",
+      "renderer/_error.page.jsx",
+      "renderer/_default.page.client.jsx"
+    ],
+    "file": "assets/entries/entry-server-routing.3f50e940.js",
+    "imports": [
+      "_chunk-078aa1fb.js"
+    ],
+    "isEntry": true,
+    "src": "node_modules/vite-plugin-ssr/dist/esm/client/entry.js"
+  },
+  "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js": {
+    "dynamicImports": [
+      "pages/contacto/index.page.jsx",
+      "pages/index/index.page.jsx",
+      "pages/ingresar/index.page.jsx",
+      "pages/institucional/index.page.jsx",
+      "pages/registrar-empresa/index.page.jsx",
+      "pages/servicios/index.page.jsx",
+      "renderer/_error.page.jsx",
+      "renderer/_default.page.client.jsx"
+    ],
+    "file": "assets/entries/entry-client-routing.a40cb0a3.js",
+    "imports": [
+      "_chunk-078aa1fb.js"
+    ],
+    "isEntry": true,
+    "src": "node_modules/vite-plugin-ssr/dist/esm/client/router/entry.js"
+  },
+  "pages/contacto/index.page.css": {
+    "file": "assets/static/index.page.b185c742.css",
+    "src": "pages/contacto/index.page.css"
+  },
+  "pages/contacto/index.page.jsx": {
+    "css": [
+      "assets/static/index.page.b185c742.css"
+    ],
+    "file": "assets/entries/pages_contacto_index.page.ad4bf04e.js",
+    "imports": [
+      "_chunk-95bbd968.js",
+      "_chunk-b65e180f.js",
+      "_chunk-35ced68b.js"
+    ],
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": "pages/contacto/index.page.jsx"
+  },
+  "pages/index/index.page.css": {
+    "file": "assets/static/index.page.c2c504db.css",
+    "src": "pages/index/index.page.css"
+  },
+  "pages/index/index.page.jsx": {
+    "css": [
+      "assets/static/index.page.c2c504db.css"
+    ],
+    "file": "assets/entries/pages_index_index.page.158b2369.js",
+    "imports": [
+      "_chunk-95bbd968.js",
+      "_chunk-b65e180f.js",
+      "_chunk-3818d69e.js",
+      "_chunk-35ced68b.js"
+    ],
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": "pages/index/index.page.jsx"
+  },
+  "pages/ingresar/index.page.css": {
+    "file": "assets/static/index.page.dd2d85c5.css",
+    "src": "pages/ingresar/index.page.css"
+  },
+  "pages/ingresar/index.page.jsx": {
+    "css": [
+      "assets/static/index.page.dd2d85c5.css"
+    ],
+    "file": "assets/entries/pages_ingresar_index.page.0c088271.js",
+    "imports": [
+      "_chunk-95bbd968.js",
+      "_chunk-b65e180f.js",
+      "_chunk-35ced68b.js"
+    ],
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": "pages/ingresar/index.page.jsx"
+  },
+  "pages/institucional/index.page.css": {
+    "file": "assets/static/index.page.1d5fff42.css",
+    "src": "pages/institucional/index.page.css"
+  },
+  "pages/institucional/index.page.jsx": {
+    "css": [
+      "assets/static/index.page.1d5fff42.css"
+    ],
+    "file": "assets/entries/pages_institucional_index.page.66ff9df2.js",
+    "imports": [
+      "_chunk-95bbd968.js",
+      "_chunk-b65e180f.js",
+      "_chunk-3818d69e.js",
+      "_chunk-35ced68b.js"
+    ],
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": "pages/institucional/index.page.jsx"
+  },
+  "pages/registrar-empresa/index.page.css": {
+    "file": "assets/static/index.page.f2616777.css",
+    "src": "pages/registrar-empresa/index.page.css"
+  },
+  "pages/registrar-empresa/index.page.jsx": {
+    "css": [
+      "assets/static/index.page.f2616777.css"
+    ],
+    "file": "assets/entries/pages_registrar-empresa_index.page.b6f73515.js",
+    "imports": [
+      "_chunk-95bbd968.js",
+      "_chunk-b65e180f.js",
+      "_chunk-35ced68b.js"
+    ],
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": "pages/registrar-empresa/index.page.jsx"
+  },
+  "pages/servicios/index.page.css": {
+    "file": "assets/static/index.page.946a2c34.css",
+    "src": "pages/servicios/index.page.css"
+  },
+  "pages/servicios/index.page.jsx": {
+    "css": [
+      "assets/static/index.page.946a2c34.css"
+    ],
+    "file": "assets/entries/pages_servicios_index.page.1ff63238.js",
+    "imports": [
+      "_chunk-95bbd968.js",
+      "_chunk-b65e180f.js",
+      "_chunk-3818d69e.js",
+      "_chunk-35ced68b.js"
+    ],
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": "pages/servicios/index.page.jsx"
+  },
+  "renderer/_default.page.client.css": {
+    "file": "assets/static/default.page.client.454bcd3a.css",
+    "src": "renderer/_default.page.client.css"
+  },
+  "renderer/_default.page.client.jsx": {
+    "css": [
+      "assets/static/default.page.client.454bcd3a.css"
+    ],
+    "file": "assets/entries/renderer_default.page.client.93a40990.js",
+    "imports": [
+      "_chunk-95bbd968.js",
+      "_chunk-35ced68b.js"
+    ],
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": "renderer/_default.page.client.jsx"
+  },
+  "renderer/_error.page.jsx": {
+    "file": "assets/entries/renderer_error.page.87e62e52.js",
+    "imports": [
+      "_chunk-95bbd968.js"
+    ],
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": "renderer/_error.page.jsx"
+  }
+}
